@@ -16,7 +16,36 @@ Canvas-based pages (WebGPU, realtime 3D) are Chrome 129+ and equivalent.
 
 ## Some Experimental Findings
 - JPEGs with Gainmaps work in Mac Preview, but don't work in Mac Finder
-- YouTube does not support H.265/HEVC in HDR, but supports H.264 HDR10 Rec202 HLG and PQ
+
+## How To
+
+### MacOS ScreenCaptureKit
+
+Goal: Capture videos and screenshots from MacOS in HDR.  
+
+- https://developer.apple.com/documentation/screencapturekit/capturing_screen_content_in_macos
+  20241015 – didn't get it to work. Regular LDR capture works, but HDR capture doesn't.
+
+### OBS Screencapture on Mac
+
+_Note: does not seem supported on Mac displays as of 20241015..._
+
+1. OBS > Settings > Advanced  
+   <img width="981" alt="image" src="https://github.com/user-attachments/assets/8f99a2c1-b4a9-4feb-b07e-3a2f8acf5e41">
+2. OBS > Settings > Output  
+   <img width="800" alt="image" src="https://github.com/user-attachments/assets/8be7275a-11cb-47e7-81ba-0d849ca3e9a6">
+3. ???
+
+### YouTube HDR Video Uploads
+
+YouTube does not support H.265/HEVC in HDR, but supports H.264 HDR10 Rec202 HLG and PQ. This is in contrast to what the documentation states.  
+The tooling YouTube provides for hdr metadata injection is now ~8 years old and the provided droplet doesn't seem to work on Apple Silicon.
+
+### Use iPhone HDR Photos on the web
+
+### Use iPhone HDR Videos on the web
+
+### Use iPhone HDR Videos on YouTube
 
 ## More resources
 
